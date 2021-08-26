@@ -1,3 +1,4 @@
+from HTMLTestRunner.HTMLTestRunner import HTMLTestRunner
 from selenium import webdriver
 import unittest
 
@@ -30,4 +31,4 @@ class DexcomTest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='..\\reports'))
